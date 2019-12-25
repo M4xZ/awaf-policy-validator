@@ -1,12 +1,11 @@
 # f5-waf-tester
-F5 tester tool that ensure basic security level.
+F5 Networks Advanced WAF tester tool to ensure basic security level.
 
 # Overview
 
-F5 research team has created a tool that provide an easy and fast way to integrate security testing into the SDLC,\
-That will ensure WAF prodive basic security level, before releasing to production.
+F5 Networks Threat Research Team has created a tool that provides an easy and fast way to integrate security testing as part of the SDLC process for basic application protection health check before moving to production.
 
-The tester tool covers testing a varoius basic attack types which include:
+The tester tool covers testing of varoius basic attack types which include:
 
         "Cross Site Scripting (XSS)"    
         "SQL-Injection"    
@@ -24,9 +23,9 @@ The tester tool covers testing a varoius basic attack types which include:
 
 # How it Works
 
-The tool will test the protection level by sending various attacks type samples, that validate the application is not vulnerable to these attacks. The tool will check on which attacks the response page was a WAF blocking page, and based on that will provide testing results with possible reasons of the failed attacks that related to WAF.
+The tool is intended to test the WAF configuration state and its provided security posture against common web attack types. The tool will send HTTP requests containing attacks and will expect to recieve a WAF blocking page in the resposnse. In case the attack vecor was not blocked, the tool will read the WAF logs and its confgiuration to try determine possible reasons for the attack not being blocked, and suggest corresponding actions.
 
-On top of the generic attack types tests, the tool support testing attack types to a spesific server technologies based on the application components:
+On top of the above attack type tests, the tool supports focusing on testing spesific server technologies:
 
         "Node.js"
         "PHP"
