@@ -175,3 +175,10 @@ e.g:
 
 #### 3. [Inspect and Adapt] Refine the WAF policy based on the possilbe reasons results and run the tester tool again
 Once the results are clear from any failed tests, it means that you WAF is ready to be deployed and provide the basic protection level against web attacks.
+
+#### 4. [Add Attacks] Build your custom tests to cover more use cases 
+open the "tests.json" file and add your own test vector block based on the same JSON format  
+Follow the tests samples in the tests.json file as an examples to the options that you can use 
+
+#### Disclaimer
+The tool is not testing whether the application itself is vulnerable and also tests only a subset of attacks. The tool tries to test the WAF security policy level, and is not a replacement for a vulnerability scanner assessment.
